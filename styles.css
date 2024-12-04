@@ -16,23 +16,40 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* 修改导航栏样式 */
+/* 导航栏样式 */
+.navbar {
+  display: flex;
+  justify-content: center; /* 居中导航栏内容 */
+  align-items: center; /* 垂直居中 */
+  padding: 10px 20px;
+  background: none; /* 移除背景 */
+  box-shadow: none; /* 移除阴影 */
+}
+
+/* 导航链接样式 */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 40px; /* 增加链接之间的距离 */
   margin: 0;
   padding: 0;
 }
 
+.nav-links li {
+  display: inline;
+}
+
 .nav-links a {
   text-decoration: none;
-  color: #333;
+  color: #333; /* 链接颜色 */
+  font-size: 18px; /* 增大字体 */
   font-weight: bold;
-  font-size: 1rem;
+  transition: color 0.3s ease; /* 鼠标悬停效果 */
 }
 
 .nav-links a:hover {
-  color: #007bff;
+  color: #007bff; /* 鼠标悬停时颜色变化 */
 }
 
 /* Hero Image */
