@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Porcelain Symbols</title>
     <link rel="stylesheet" href="styles.css" />
+    <!-- 引入明确版本的 model-viewer 脚本 -->
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
+    ></script>
   </head>
   <body>
     <!-- 导航栏 -->
@@ -21,10 +26,7 @@
 
     <!-- Hero Image -->
     <section id="hero">
-      <div class="hero-image">
-        <h1>Porcelain Symbols</h1>
-        <p>Dragonss, Flowers, and Landscapes in Blue-and-White Porcelain</p>
-      </div>
+      <div class="hero-image"></div>
     </section>
 
     <!-- 简介部分 -->
@@ -82,74 +84,122 @@
       <!-- 产品1 -->
       <div class="product-container">
         <!-- 产品名称 -->
-        <h2 class="product-name">
-          Imperial Elegance: The Qing Dynasty Baluster Vase
-        </h2>
+        <h2 class="product-name">Floral Harmony: The Jingdezhen Dish</h2>
 
         <!-- 左侧：产品简介 -->
+
         <div class="product-description">
+          <h3>Background</h3>
           <p>
-            This exquisite baluster vase is one of three in a five-piece
-            garniture, crafted during the Qing dynasty. The white porcelain vase
-            features a clear, feldspathic glaze and intricate decorations
-            painted in underglaze cobalt blue. The design includes a lively
-            court scene with a lady entertained by dancers and musicians,
-            complemented by floral sprays on the neck and domed cover. The
-            elegant bud-shaped finial knob adds a touch of sophistication to
-            this masterpiece, which reflects the artistic traditions of
-            Jingdezhen ware.
+            This delicate dish, one of a matched pair, offers a glimpse into the
+            precision and beauty of Qing dynasty porcelain. The stylized floral
+            motifs, rendered in dark cobalt glaze, dance across the shallow
+            center and thick rim, exemplifying the celebrated craftsmanship of
+            Jingdezhen, the porcelain capital of China.
+          </p>
+          <h3>Historical Context</h3>
+          <p>
+            Made during the late 17th to early 18th century, this dish reflects
+            the artistic experimentation and mastery that Jingdezhen artisans
+            were renowned for. Its simplicity belies a profound understanding of
+            form, proportion, and decorative elegance, making it a favored piece
+            in both imperial and diplomatic settings.
+          </p>
+          <h3>Provenance</h3>
+          <p>
+            Once part of Ambassador Jack Wilson Lydman’s collection, this dish
+            holds not only artistic value but also a legacy tied to
+            cross-cultural appreciation and historical exchange.
           </p>
         </div>
 
-        <!-- 中间：图片展示 -->
-        <div class="product-images">
-          <img src="images/3Dimage1.jpg" alt="Image 1" />
-          <img src="images/3Dimage2.jpg" alt="Image 2" />
-          <img src="images/3Dimage3.jpg" alt="Image 3" />
-        </div>
-
         <!-- 底部：3D 按钮和占位符 -->
-        <div class="product-bottom">
-          <div class="viewer-placeholder">3D Model Viewer Placeholder</div>
+        <div>
+          <model-viewer
+            src="porcelain-symbols/glb/plate3D.glb"
+            ar
+            ar-modes="webxr scene-viewer quick-look"
+            camera-controls
+            tone-mapping="neutral"
+            poster="porcelain-symbols/images/plate_poster.webp"
+            shadow-intensity="1"
+            loading="eager"
+            reveal="auto"
+          >
+            <div class="progress-bar hide" slot="progress-bar">
+              <div class="update-bar"></div>
+            </div>
+            <button slot="ar-button" id="ar-button">在 AR 中查看</button>
+          </model-viewer>
         </div>
-        <div class="product-bottom-button">
-          <button class="view-3d-btn">View in 3D</button>
-        </div>
+      </div>
+      <!-- 中间：图片展示 -->
+      <div class="product-images">
+        <img src="images/3Dimage1.jpg" alt="Image 1" />
+        <img src="images/3Dimage2.jpg" alt="Image 2" />
+        <img src="images/3Dimage3.jpg" alt="Image 3" />
       </div>
 
       <!-- 产品2 -->
       <div class="product-container">
         <!-- 产品名称 -->
-        <h2 class="product-name">
-          The Timeless Bloom: A Blue-and-White Porcelain Dish
-        </h2>
+        <h2 class="product-name">Grace in Motion: The Courtly Baluster Vase</h2>
 
         <!-- 左侧：产品简介 -->
         <div class="product-description">
+          <h3>Background</h3>
           <p>
-            This elegant dish is one of a pair originating from the late 17th to
-            early 18th century during the Qing dynasty. It features a shallow
-            center, a thick rim, and a deep ring base, showcasing stylized
-            floral designs painted in dark cobalt blue glaze. The dish’s simple
-            yet sophisticated aesthetics highlight the mastery of Jingdezhen
-            artisans in combining functionality with artistic beauty.
+            This baluster vase, part of a five-piece garniture set, epitomizes
+            the elegance of blue-and-white porcelain artistry from the Qing
+            dynasty. Adorned with scenes of courtly entertainment, the vase
+            features a noble lady surrounded by dancers and musicians, evoking
+            the cultural sophistication of imperial China. Floral sprays
+            embellish its neck, while its domed cover showcases a harmonious
+            depiction of ladies amidst flowers and rocks, crowned with a
+            bud-shaped finial knob.
+          </p>
+          <h3>Historical Context</h3>
+          <p>
+            Crafted using underglaze cobalt blue on white porcelain, this vase
+            reflects the technical mastery and aesthetic sensibilities of its
+            time. Each brushstroke of the cobalt design speaks of refinement and
+            storytelling, capturing moments of leisure and artistic tradition
+            within the court.
+          </p>
+          <h3>Provenance</h3>
+          <p>
+            With a storied history of ownership, the vase has passed through
+            esteemed collectors and galleries, including Duveen Brothers and
+            Mrs. B.F. Jones, serving as a testament to its timeless appeal and
+            value.
           </p>
         </div>
 
-        <!-- 中间：图片展示 -->
-        <div class="product-images">
-          <img src="images/3Dimage4.jpg" alt="Image 4" />
-          <img src="images/3Dimage5.jpg" alt="Image 5" />
-          <img src="images/3Dimage6.jpg" alt="Image 6" />
+        <div>
+          <model-viewer
+            src="porcelain-symbols/glb/vase1.glb"
+            ar
+            ar-modes="webxr scene-viewer quick-look"
+            camera-controls
+            tone-mapping="neutral"
+            poster="porcelain-symbols/images/vase1_poster.webp"
+            shadow-intensity="1"
+            loading="eager"
+            reveal="auto"
+          >
+            <div class="progress-bar hide" slot="progress-bar">
+              <div class="update-bar"></div>
+            </div>
+            <button slot="ar-button" id="ar-button">在 AR 中查看</button>
+          </model-viewer>
         </div>
+      </div>
 
-        <!-- 底部：3D 按钮和占位符 -->
-        <div class="product-bottom">
-          <div class="viewer-placeholder">3D Model Viewer Placeholder</div>
-        </div>
-        <div class="product-bottom-button">
-          <button class="view-3d-btn">View in 3D</button>
-        </div>
+      <!-- 中间：图片展示 -->
+      <div class="product-images">
+        <img src="images/3Dimage4.jpg" alt="Image 4" />
+        <img src="images/3Dimage5.jpg" alt="Image 5" />
+        <img src="images/3Dimage6.jpg" alt="Image 6" />
       </div>
 
       <!-- 产品3 -->
@@ -161,14 +211,47 @@
 
         <!-- 左侧：产品简介 -->
         <div class="product-description">
+          <h3>Background</h3>
           <p>
-            This beaker-shaped vase, part of a five-piece garniture, exemplifies
-            the artistic excellence of Qing dynasty porcelain. The vase is
-            divided into sections by herringbone borders and adorned with court
-            scenes, including ladies in a garden setting. The flaring neck and
-            middle sections boast detailed cobalt blue underglaze paintings that
-            convey a sense of grace and cultural richness.
+            This beaker-shaped vase, another gem from the five-piece garniture,
+            presents a narrative of sophistication and artistic flair. Decorated
+            with court scenes of refined elegance, the vase transitions from
+            depictions of ladies in garden settings to herringbone borders that
+            divide its sections, creating a balanced and harmonious design.
           </p>
+          <h3>Historical Context</h3>
+          <p>
+            Crafted with white porcelain and a clear feldspathic glaze, this
+            vase represents the height of underglaze cobalt blue decoration. The
+            artistic details capture not only the societal structures of the
+            Qing dynasty but also the technical ingenuity of porcelain-making in
+            the period.
+          </p>
+          <h3>Provenance</h3>
+          <p>
+            Like its counterpart, this vase has traveled through significant
+            hands, including Duveen Brothers and Mrs. B.F. Jones, reflecting its
+            enduring cultural and monetary value.
+          </p>
+        </div>
+
+        <div>
+          <model-viewer
+            src="porcelain-symbols/glb/vase2.glb"
+            ar
+            ar-modes="webxr scene-viewer quick-look"
+            camera-controls
+            tone-mapping="neutral"
+            poster="porcelain-symbols/images/vase2_poster.webp"
+            shadow-intensity="1"
+            loading="eager"
+            reveal="auto"
+          >
+            <div class="progress-bar hide" slot="progress-bar">
+              <div class="update-bar"></div>
+            </div>
+            <button slot="ar-button" id="ar-button">在 AR 中查看</button>
+          </model-viewer>
         </div>
 
         <!-- 中间：图片展示 -->
@@ -176,14 +259,6 @@
           <img src="images/3Dimage7.jpg" alt="Image 7" />
           <img src="images/3Dimage8.jpg" alt="Image 8" />
           <img src="images/3Dimage9.jpg" alt="Image 9" />
-        </div>
-
-        <!-- 底部：3D 按钮和占位符 -->
-        <div class="product-bottom">
-          <div class="viewer-placeholder">3D Model Viewer Placeholder</div>
-        </div>
-        <div class="product-bottom-button">
-          <button class="view-3d-btn">View in 3D</button>
         </div>
       </div>
     </section>
