@@ -120,18 +120,15 @@
             ar
             ar-modes="webxr scene-viewer quick-look"
             camera-controls
-            tone-mapping="neutral"
-            poster="porcelain-symbols/images/plate_poster.webp"
+            auto-rotate
+            interaction-prompt="auto"
             shadow-intensity="1"
-            loading="eager"
-            reveal="auto"
-            onload="console.log('Model loaded successfully')"
-            onerror="console.error('Error loading model:', event)"
+            style="width: 100%; height: 400px"
           >
             <div class="progress-bar hide" slot="progress-bar">
               <div class="update-bar"></div>
             </div>
-            <button slot="ar-button" id="ar-button">view in AR</button>
+            <button slot="ar-button" id="ar-button">在 AR 中查看</button>
           </model-viewer>
         </div>
       </div>
@@ -182,38 +179,16 @@
             src="porcelain-symbols/glb/vase1.glb"
             ar
             ar-modes="webxr scene-viewer quick-look"
-            ar-scale="fixed"
-            ar-placement="floor"
-            interaction-prompt="auto"
             camera-controls
-            tone-mapping="neutral"
-            poster="porcelain-symbols/images/vase1_poster.webp"
+            auto-rotate
+            interaction-prompt="auto"
             shadow-intensity="1"
-            exposure="1"
-            style="width: 100%; height: 400px; background-color: #f5f5f5"
-            onload="this.parentElement.classList.remove('loading')"
-            onerror="this.parentElement.classList.add('error')"
+            style="width: 100%; height: 400px"
           >
-            <div class="progress-bar" slot="progress-bar">
+            <div class="progress-bar hide" slot="progress-bar">
               <div class="update-bar"></div>
             </div>
-            <button
-              slot="ar-button"
-              style="
-                background-color: white;
-                border-radius: 4px;
-                border: none;
-                position: absolute;
-                bottom: 16px;
-                right: 16px;
-                padding: 8px 16px;
-              "
-            >
-              view in AR
-            </button>
-            <div class="error-message" style="display: none">
-              加载失败，请刷新页面重试
-            </div>
+            <button slot="ar-button" id="ar-button">在 AR 中查看</button>
           </model-viewer>
         </div>
       </div>
@@ -264,16 +239,15 @@
             ar
             ar-modes="webxr scene-viewer quick-look"
             camera-controls
-            tone-mapping="neutral"
-            poster="porcelain-symbols/images/vase2_poster.webp"
+            auto-rotate
+            interaction-prompt="auto"
             shadow-intensity="1"
-            loading="eager"
-            reveal="auto"
+            style="width: 100%; height: 400px"
           >
             <div class="progress-bar hide" slot="progress-bar">
               <div class="update-bar"></div>
             </div>
-            <button slot="ar-button" id="ar-button">View in AR</button>
+            <button slot="ar-button" id="ar-button">在 AR 中查看</button>
           </model-viewer>
         </div>
 
