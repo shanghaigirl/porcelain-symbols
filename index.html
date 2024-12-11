@@ -125,11 +125,13 @@
             shadow-intensity="1"
             loading="eager"
             reveal="auto"
+            onload="console.log('Model loaded successfully')"
+            onerror="console.error('Error loading model:', event)"
           >
             <div class="progress-bar hide" slot="progress-bar">
               <div class="update-bar"></div>
             </div>
-            <button slot="ar-button" id="ar-button">在 AR 中查看</button>
+            <button slot="ar-button" id="ar-button">view in AR</button>
           </model-viewer>
         </div>
       </div>
@@ -177,7 +179,7 @@
 
         <div class="model-viewer-container loading">
           <model-viewer
-            data-src="/porcelain-symbols/glb/vase1.glb"
+            src="porcelain-symbols/glb/vase1.glb"
             ar
             ar-modes="webxr scene-viewer quick-look"
             ar-scale="fixed"
@@ -185,7 +187,7 @@
             interaction-prompt="auto"
             camera-controls
             tone-mapping="neutral"
-            poster="/porcelain-symbols/images/vase1_poster.webp"
+            poster="porcelain-symbols/images/vase1_poster.webp"
             shadow-intensity="1"
             exposure="1"
             style="width: 100%; height: 400px; background-color: #f5f5f5"
@@ -207,7 +209,7 @@
                 padding: 8px 16px;
               "
             >
-              在 AR 中查看
+              view in AR
             </button>
             <div class="error-message" style="display: none">
               加载失败，请刷新页面重试
@@ -271,7 +273,7 @@
             <div class="progress-bar hide" slot="progress-bar">
               <div class="update-bar"></div>
             </div>
-            <button slot="ar-button" id="ar-button">在 AR 中查看</button>
+            <button slot="ar-button" id="ar-button">View in AR</button>
           </model-viewer>
         </div>
 
