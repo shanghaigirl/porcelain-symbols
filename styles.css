@@ -334,3 +334,22 @@ model-viewer {
   float: left;
   transition: width 0.3s;
 }
+
+/* Hero Image 文字样式 */
+.hero-text {
+  position: absolute;
+  bottom: 15%; /* 调整文字距离底部的距离 */
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #333; /* 文字颜色 */
+  padding: 20px;
+}
+
+.hero-text h3 {
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: 500;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* 文字阴影，提高可读性 */
+  line-height: 1.5;
+}
