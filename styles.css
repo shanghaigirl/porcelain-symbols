@@ -338,11 +338,11 @@ model-viewer {
 /* Hero Image 文字样式 */
 .hero-text {
   position: absolute;
-  bottom: 15%; /* 调整文字距离底部的距离 */
+  bottom: 5%; /* 降低文字位置 */
   left: 0;
   right: 0;
   text-align: center;
-  color: #333; /* 文字颜色 */
+  color: #fff; /* 改为白色 */
   padding: 20px;
 }
 
@@ -350,6 +350,6 @@ model-viewer {
   margin: 10px 0;
   font-size: 24px;
   font-weight: 500;
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* 文字阴影，提高可读性 */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 修改阴影颜色以提高白色文字的可读性 */
   line-height: 1.5;
 }
