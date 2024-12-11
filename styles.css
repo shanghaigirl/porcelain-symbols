@@ -338,7 +338,7 @@ model-viewer {
 /* Hero Image 文字样式 */
 .hero-text {
   position: absolute;
-  bottom: 5%; /* 降低文字位置 */
+  bottom: 3%; /* 降低文字位置 */
   left: 0;
   right: 0;
   text-align: center;
